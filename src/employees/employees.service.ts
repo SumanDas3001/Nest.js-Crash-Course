@@ -25,7 +25,7 @@ export class EmployeesService {
   async findOne(id: number) {
     return this.databaseService.employee.findUnique({
       where: {
-        id: id,
+        id,
       },
     });
   }
